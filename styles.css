@@ -1,0 +1,44 @@
+body {
+    background-color: #e0e0e0; /* Light gray background */
+    font-family: 'Comic Sans MS', cursive; 
+    color: #333; /* Dark text */
+    margin: 0;
+}
+
+header {
+    background-color: #000080; /* Navy blue */
+    color: #ffdd00; /* Bright yellow */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #008080;  /* Teal border */
+}
+
+.project h2 {
+    color: #ff0080; /* Hot pink */
+}
+
+footer {
+    background-color: #808080; /* Gray */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.blink { /* For blinking text */
+    animation: blink 1s linear infinite alternate;  
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; } 
+}
