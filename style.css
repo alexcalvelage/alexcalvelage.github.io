@@ -1,0 +1,93 @@
+main {
+    padding: 20px;
+}
+
+
+body {
+    background-color: #141414;
+    font-family: 'Trebuchet MS', cursive; 
+    color: #eed750;
+    margin: 0;
+}
+
+a {
+    color: #e9b64f;
+}
+
+header {
+    background-color: #000080; /* Navy blue */
+    color: #ffdd00; /* Bright yellow */
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if space is insufficient */
+    justify-content: space-between; /* Adjust as needed (e.g., space-around, center) */
+    align-items: center;
+}
+
+.project-item {
+    text-align: center; /* Center align content within each item */
+    width: calc(33.33% - 20px); /* Adjust width based on your layout needs */
+    margin-bottom: 20px; /* Space between each project item */
+}
+
+.project-image {
+    width: 100%; /* Ensure images fill their containers */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    transition: transform 0.1s;
+    border-radius: 8px;
+}
+
+.project-item .project-image {
+    max-width: 100%;
+    height: auto;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+  }
+
+.project-item:hover .project-image {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+[data-type][data-type="enlarge"].enlarged {
+    position: fixed;
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.85);
+    z-index: 3;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #808080; /* Gray */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
