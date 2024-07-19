@@ -1,0 +1,4 @@
+-Fixed being able to enlarge multiple images at once
+-Added zm_cinema page
+-Fixed project-item descriptions trailing off the page
+-Added scrollbar to see more than 3 project-items
