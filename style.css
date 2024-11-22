@@ -5,7 +5,7 @@ main {
 
 body {
     background-color: #141414;
-    font-family: 'Trebuchet MS', cursive; 
+    font-family: 'Trebuchet MS', cursive;
     color: #eed750;
     margin: 0;
 }
@@ -15,10 +15,56 @@ a {
 }
 
 header {
-    background-color: #000080; /* Navy blue */
-    color: #ffdd00; /* Bright yellow */
-    padding: 20px;
+    background-color: #272727;
+    /* Navy blue */
+    color: #ffdd00;
+    /* Bright yellow */
+    padding: 10px;
     text-align: center;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #141414;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee h1 {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+
+    /* Starting position */
+    transform: translateX(100%);
+
+    /* Apply animation to this element */
+    animation: marquee 20s linear infinite;
+}
+
+    
+/* Move it (define the animation) */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 section {
@@ -28,8 +74,10 @@ section {
 
 .project-container {
     display: flex;
-    flex-wrap: nowrap; /* Allows items to wrap to the next line if space is insufficient */
-    justify-content: flex-start; /* Adjust as needed (e.g., space-around, center) */
+    flex-wrap: nowrap;
+    /* Allows items to wrap to the next line if space is insufficient */
+    justify-content: flex-start;
+    /* Adjust as needed (e.g., space-around, center) */
     align-items: center;
     overflow-x: auto;
     width: 100%;
@@ -38,23 +86,31 @@ section {
 }
 
 .project-item {
-    text-align: center; /* Center align content within each item */
+    text-align: center;
+    /* Center align content within each item */
     flex: 0 0 auto;
-    width: calc(33.33% - 20px); /* Adjust width based on your layout needs */
+    width: calc(33.33% - 20px);
+    /* Adjust width based on your layout needs */
     margin-right: 25px;
-    margin-bottom: 25px; /* Space between each project item */
+    margin-bottom: 25px;
+    /* Space between each project item */
 }
 
-.project-item .text{
-    text-align: center; /* Center align text */
-    white-space: wrap; /* Prevent text from wrapping to the next line */
-    overflow: ellipsis; /* Hide the overflow text */
-    
+.project-item .text {
+    text-align: center;
+    /* Center align text */
+    white-space: wrap;
+    /* Prevent text from wrapping to the next line */
+    overflow: ellipsis;
+    /* Hide the overflow text */
+
 }
 
 .project-image {
-    width: 100%; /* Ensure images fill their containers */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    /* Ensure images fill their containers */
+    height: auto;
+    /* Maintain aspect ratio */
     object-fit: cover;
     transform-origin: 50% 50%;
     transition: transform 0.1s;
@@ -66,7 +122,7 @@ section {
     height: auto;
     transform-origin: center center;
     transition: transform 0.3s ease;
-  }
+}
 
 .project-item:hover .project-image {
     transform: scale(1.1);
@@ -118,7 +174,8 @@ section {
 }
 
 footer {
-    background-color: #808080; /* Gray */
+    background-color: #808080;
+    /* Gray */
     color: #fff;
     padding: 10px;
     text-align: center;
