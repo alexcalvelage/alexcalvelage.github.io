@@ -1,4 +1,3 @@
--Added zm_cinema page information
--Added zm_fishtank page information
--Changed page colors
--Modified header styles
+-Removed "item" appearing at the bottom of the Dark Domains page
+-Fixed scaling of containers on slim screens
+-Updated Love2D placeholder images

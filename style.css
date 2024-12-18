@@ -99,9 +99,9 @@ section {
 .project-item .text {
     text-align: center;
     /* Center align text */
-    white-space: wrap;
+    white-space: inherit;
     /* Prevent text from wrapping to the next line */
-    overflow: ellipsis;
+    overflow: hidden;
     /* Hide the overflow text */
 
 }
