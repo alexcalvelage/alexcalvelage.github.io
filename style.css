@@ -74,67 +74,95 @@ section {
 
 .project-container {
     display: flex;
-    flex-wrap: nowrap;
-    /* Allows items to wrap to the next line if space is insufficient */
-    justify-content: flex-start;
-    /* Adjust as needed (e.g., space-around, center) */
-    align-items: center;
-    overflow-x: auto;
-    width: 100%;
-    white-space: nowrap;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
 }
 
 .project-item {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    max-width: 30%;
+    max-height: 100%;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+.project-item:hover {
+    overflow: visible;
+}
+
+.project-item .project-image {
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.25);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item .text-header {
+    z-index: 2;
+    max-width: 100%;
     text-align: center;
-    /* Center align content within each item */
-    flex: 0 0 auto;
-    width: calc(33.33% - 20px);
-    /* Adjust width based on your layout needs */
-    margin-right: 25px;
-    margin-bottom: 25px;
-    /* Space between each project item */
+    white-space: normal;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item:hover .text-header {
+    position: relative;
+    text-align: center;
+    background-color: #00000075;
+    color: #ffffff;
+    transform: translateY(50%);
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-item .text {
-    text-align: center;
-    /* Center align text */
-    white-space: inherit;
-    /* Prevent text from wrapping to the next line */
+    z-index: 2;
     overflow: hidden;
-    /* Hide the overflow text */
+    text-align: center;
+    white-space: pre;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    transition: transform 1s ease-in-out;
+}
 
+.project-item:hover .text {
+    position: relative;
+    overflow: visible;
+    white-space: normal;
+    max-width: max-content;
+    height: fit-content 25%;
+    background-color: #00000075;
+    color: #ffffff;
+    transform: translateY(-25%);
+    transition: transform 1s ease-in-out;
 }
 
 .project-image {
     width: 100%;
-    /* Ensure images fill their containers */
     height: auto;
-    /* Maintain aspect ratio */
     object-fit: cover;
     transform-origin: 50% 50%;
-    transition: transform 0.1s;
-    border-radius: 8px;
-}
-
-.project-item .project-image {
-    max-width: 100%;
-    height: auto;
-    transform-origin: center center;
-    transition: transform 0.3s ease;
-}
-
-.project-item:hover .project-image {
-    transform: scale(1.1);
-    z-index: 2;
+    border-radius: 2%;
 }
 
 [data-type][data-type="enlarge"].enlarged {
     position: fixed;
-    transform-origin: center center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(.85);
+    transform-origin: center center;
+    transform: translate(-50%, -50%) scale(0.85);
     z-index: 3;
 }
 
