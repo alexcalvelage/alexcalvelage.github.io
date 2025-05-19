@@ -1,14 +1,1 @@
--Reworked project-containers
--Reworked marquee
-
--Added navigation buttons in header
--Added Collector project
--Added Contact Me page
-
--Updated footer
--Updated Dark Domains and added itch.io link
--Updated various project descriptions
--Updated hyperlink css
--Updated about me description
-
--Fixed a bunch of scaling/positioning issues
+-Fixed horizontal scrollbar appearing from marquee
