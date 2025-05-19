@@ -1,131 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="marquee-container">
-      <div class="marquee">
-        <h1>Welcome to Alex's Portfolio!</h1>
-        <br><br><br>
-      </div>
-    </div>
-      <p>A showcase of my various projects within game development</p>
+        <div class="marquee">
+            <!--Duplicate content to create seamless wrap-->
+            <div class="marquee-item">Welcome to Alex's Portfolio!</div>
+            <div class="marquee-item">Welcome to Alex's Portfolio!</div>
+        </div>
+        <p>A showcase of my various projects within game development</p>
+        <div class="navigation">
+            <a href="index.html" class="button">Home</a>
+            <a href="contact_us.html" class="button">Contact Me</a>
+        </div>
     </header>
 
     <main>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          My name is Alex Calvelage, I am a solo game dev who has worked on
-          various game projects using Love2D and Unreal Engine! I'm also 
-          familiar with the CoDRadiant level editor to create custom zombie maps
-          using the Call of Duty: Black Ops 3 Mod Tools.
-        </p>
-      </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                My name is Alex Calvelage. I’m a game developer/level designer with experience
+                creating a variety of projects using Love2D, Godot, and Unreal Engine.
+                I'm also proficient with the CoDRadiant level editor and have built multiple
+                custom zombie maps using the Call of Duty: Black Ops 3 Mod Tools.
+            </p>
+        </section>
 
-      <section id="game-dev">
-        <h2>Game Dev Projects</h2>
-        <div class="project-container">
-          <div class="project-item">
-            <a href="dark_domains.html">
-              <h3 class = "text-header">Dark Domains</h3>
-              <img
-                src="images/darkdomains1.png"
-                alt="Dark Domains Main Menu"
-                class="project-image"
-              />
-            </a>
-            <p class="text">
-              A rogue-lite top-down survival game. Made with Love2D.
-            </p>
-          </div>
-          <div class="project-item">
-            <a href="wham_engine.html">
-            <h3 class = "text-header">WHAM Engine</h3>
-            <img
-              src="images/whamengine5.png"
-              alt="WHAM Engine Create New Level"
-              class="project-image"
-            />
-          </a>
-            <p class="text">A 2D platforming engine prototype. Made with Love2D.
-            </p>
-          </div>
-          <div class="project-item">
-            <h3 class = "text-header">Weed Bike</h3>
-            <img
-              src="images/weedbike1.png"
-              alt="placeholder image"
-              class="project-image"
-            />
-            <p class="text">
-              A 2D endless-runner game where you must deliver 'flowers' to the neighborhood. 
-              Made with Love2D.
-            </p>
-          </div>
-        </div>
-      </section>
+        <section id="game-dev">
+            <h2>Game Dev Projects</h2>
+            <div class="project-container">
+                <div class="project-item">
+                    <a href="dark_domains.html">
+                        <h3 class="text-header">Dark Domains</h3>
+                        <h6 class="text-subheader">Love2D</h6>
+                        <img src="images/darkdomains1.png" alt="Dark Domains Main Menu" class="project-image" />
+                    </a>
+                    <p class="text">
+                        Rogue-lite top-down survival game.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <a href="wham_engine.html">
+                        <h3 class="text-header">WHAM Engine</h3>
+                        <h6 class="text-subheader">Love2D</h6>
+                        <img src="images/whamengine5.png" alt="WHAM Engine Create New Level" class="project-image" />
+                    </a>
+                    <p class="text">2D platforming engine prototype.
+                    </p>
+                </div>
 
-      <section id="level-design">
-        <h2>Level Design Projects</h2>
-        <div class="project-container">
-          <div class="project-item">
-            <a href="zm_cinema.html">
-              <h3 class = "text-header">zm_cinema</h3>
-              <img src="images/zm_cinema1.jpg" alt="" class="project-image" />
-            </a>
-            <p class="text">
-              Custom Black Ops 3 Zombies' map based on a movie theater
-            </p>
-            <span class="status">STATUS: </span
-            ><span class="status-released">RELEASED</span>
-          </div>
-          <div class="project-item">
-            <a href="zm_fishtank.html">
-              <h3 class = "text-header">zm_fishtank</h3>
-            <img src="images/zm_fishtank1.jpg" alt="" class="project-image" />
-          </a>
-            <p class="text">
-              Custom Black Ops 3 Zombies' map inside of a fishtank
-            </p>
-            <span class="status">STATUS: </span
-            ><span class="status-released">RELEASED</span>
-          </div>
-          <div class="project-item">
-            <h3 class = "text-header">zm_nightmare</h3>
-            <img src="images/zm_nightmare1.jpg" alt="" class="project-image" />
-            <p class="text">
-              Custom Black Ops 3 Zombies' map, takes place in an abandoned
-              German factory
-            </p>
-            <span class="status">STATUS: </span
-            ><span class="status-released">RELEASED</span>
-            <!--https://youtu.be/eRTwSowEcxM-->
-          </div>
-        </div>
-      </section>
+                <div class="project-item">
+                    <h3 class="text-header">Weed Bike</h3>
+                    <h6 class="text-subheader">Love2D</h6>
+                    <img src="images/weedbike1.png" alt="placeholder image" class="project-image" />
+                    <p class="text">
+                        Rogue-lite endless runner game.
+                    </p>
+                </div>
 
-      <section id="contact">
-        <h2>Contact Info:</h2>
-        <div>
-          <ul>
-            <li>Email: righteousringos@gmail.com</li>
-            <li>No Social Media Presence, yet</li>
-          </ul>
-        </div>
-      </section>
+                <div class="project-item">
+                    <a href="collector.html">
+                        <h3 class="text-header">Collector</h3>
+                        <h6 class="text-subheader">Love2D</h6>
+                        <img src="images/collector1.png" alt="Collector Main Menu" class="project-image" />
+                    </a>
+                    <p class="text">
+                        Arcade, 'dodge 'em up' game.
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="level-design">
+            <h2>Level Design Projects</h2>
+            <div class="project-container">
+                <div class="project-item">
+                    <a href="zm_cinema.html">
+                        <h3 class="text-header">zm_cinema</h3>
+                        <h6 class="text-subheader">Call of Duty: Black Ops 3</h6>
+                        <img src="images/zm_cinema1.jpg" alt="" class="project-image" />
+                    </a>
+                    <p class="text">
+                        Takes place inside Regal Cinemas 12 in Lima, Ohio
+                    </p>
+                </div>
+                <div class="project-item">
+                    <a href="zm_fishtank.html">
+                        <h3 class="text-header">zm_fishtank</h3>
+                        <h6 class="text-subheader">Call of Duty: Black Ops 3</h6>
+                        <img src="images/zm_fishtank1.jpg" alt="" class="project-image" />
+                    </a>
+                    <p class="text">
+                        Tower-survival inside of a fishtank
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 class="text-header">zm_nightmare</h3>
+                    <h6 class="text-subheader">Call of Duty: Black Ops 3</h6>
+                    <img src="images/zm_nightmare1.jpg" alt="" class="project-image" />
+                    <p class="text">
+                        An abandoned German factory
+                    </p>
+                    <!--https://youtu.be/eRTwSowEcxM-->
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-      <p>&copy; 2024 Alex Calvelage</p>
-      <p>Under Construction</p>
-    </footer>
+    <footer><span>
+            <p>&copy; 2025 Alex Calvelage</p>
+            <p>Under Construction</p>
+    </footer></span>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
