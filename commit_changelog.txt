@@ -1,1 +1,4 @@
--Fixed horizontal scrollbar appearing from marquee
+-Reworked the viewable screenshots to use Dialog()
+***TODO: Add support for arrowkeys to go through screenshots
+-Improved on how margins/padding/transforms are calculated to be more consistent across screens
+-Project containers will now scroll horizontally when out of space

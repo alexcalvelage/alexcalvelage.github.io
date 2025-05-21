@@ -23,26 +23,40 @@
 
   <main>
     <section id="zm-fishtank">
+
+      <dialog id="dialog-screenshot">
+        <form class="screenshot-dialog" method="dialog">
+          <img id="selected-image" src="" class="project-image" />
+        </form>
+      </dialog>
+
       <div class="project-container">
         <div class="project-item">
-          <h3>Screenshot #1</h3>
-          <img src="images/zm_fishtank1.jpg" alt="zm_fishtank" data-type="enlarge" class="project-image" />
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #1</h3>
+            <img src="images/zm_fishtank1.jpg" alt="(Screenshot) Screenshot #1" />
+          </button>
         </div>
 
         <div class="project-item">
-          <h3>Screenshot #2</h3>
-          <img src="images/zm_fishtank2.jpg" alt="zm_fishtank" data-type="enlarge" class="project-image" />
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #2</h3>
+            <img src="images/zm_fishtank2.jpg" alt="(Screenshot) Screenshot #2" />
+          </button>
         </div>
 
         <div class="project-item">
-          <h3>Screenshot #3</h3>
-          <img src="images/zm_fishtank3.jpg" alt="zm_fishtank" data-type="enlarge" class="project-image" />
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #3</h3>
+            <img src="images/zm_fishtank3.jpg" alt="(Screenshot) Screenshot #3" />
+          </button>
         </div>
       </div>
-      </div>
+
       <div>
         <h2><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2591041089">STEAM PAGE</a></h2>
       </div>
+
       <div>
         <h4><sub>*From Steam Workshop page</sub></h4>
         <h2>DESCRIPTION:</h2>
