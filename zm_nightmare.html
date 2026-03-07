@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZM_NIGHTMARE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="marquee">
+      <!--Duplicate content to create seamless wrap-->
+      <div class="marquee-item">Nightmare</div>
+      <div class="marquee-item">Nightmare</div>
+    </div>
+    <div class="navigation">
+      <a href="index.html" class="button">Home</a>
+      <a href="contact_us.html" class="button">Contact Me</a>
+    </div>
+  </header>
+  <main>
+    <section id="zm-nightmare">
+
+      <dialog id="dialog-screenshot">
+        <form class="screenshot-dialog" method="dialog">
+          <img id="selected-image" src="" class="project-image" />
+        </form>
+      </dialog>
+
+      <div class="project-container">
+
+        <div class="project-item">
+          <button class="screenshot">
+            <h3>Video #1</h3>
+            <a href="https://www.youtube.com/watch?v=eRTwSowEcxM" target="_blank" rel="noreferrer"
+              style="display: block; position: relative;">
+              <img src="images/zm_nightmare1.jpg" alt="Video #1" />
+              <img src="images/yt_play_button.png"
+                style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:80px;" />
+            </a>
+          </button>
+        </div>
+
+        <div class="project-item">
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #2</h3>
+            <img src="images/zm_nightmare2.jpg" alt="(Screenshot) Screenshot #2" />
+          </button>
+        </div>
+
+        <div class="project-item">
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #3</h3>
+            <img src="images/zm_nightmare3.jpg" alt="(Screenshot) Screenshot #3" />
+          </button>
+        </div>
+
+        <div class="project-item">
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #4</h3>
+            <img src="images/zm_nightmare4.jpg" alt="(Screenshot) Screenshot #4" />
+          </button>
+        </div>
+
+        <div class="project-item">
+          <button class="screenshot" onclick="openSCRViewer(this)">
+            <h3>Screenshot #5</h3>
+            <img src="images/zm_nightmare5.jpg" alt="(Screenshot) Screenshot #5" />
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <h2><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=904809039">STEAM PAGE</a></h2>
+      </div>
+      <div>
+        <h4><sub>*From Steam Workshop page</sub></h4>
+        <h2>DESCRIPTION:</h2>
+        <p>A small zombie map based inside an old German factory. Includes 8 perks, only stock BO3 weapons, and a couple
+          small
+          easter eggs.</p>
+        <hr>
+        </hr>
+        <h2>Credits</h2>
+        <ul>
+          <li>All0utWar(me, duh): Mapping, scripting, ideas</li>
+          <li>NateSmithZombies: Kino Teleporter, early round running zombies</li>
+          <li>reckfullies: Shootable easter egg</li>
+          <li>DTZxPorter: Wraith</li>
+        </ul>
+        <hr>
+        </hr>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>
+      <p>&copy; 2026 Alex Calvelage</p>
+      <p>Under Construction</p>
+  </footer></span>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
