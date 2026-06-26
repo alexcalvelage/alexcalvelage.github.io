@@ -10,6 +10,7 @@ body {
     overflow-x: auto;
 }
 
+
 a {
     color: #ffdd00;
 }
@@ -88,6 +89,7 @@ header {
 section {
     margin: 0;
     padding: 0;
+    scrollbar-color: #575757 #272727 
 }
 
 .project-container {
